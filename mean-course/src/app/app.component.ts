@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'mean-course';
+  stored_posts = [];
+
+  onPostAdded(post) {
+    this.stored_posts.push(post);
+  }
 }

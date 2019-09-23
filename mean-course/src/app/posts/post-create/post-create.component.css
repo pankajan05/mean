@@ -1,6 +1,10 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 mat-card{
   width: 80%;
   margin: auto;
+  border: 0.5px solid;
+  border-color: darkslategray
 }
 
 textarea{
