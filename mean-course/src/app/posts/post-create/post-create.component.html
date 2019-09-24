@@ -1,0 +1,18 @@
+
+<mat-card>
+  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+      <mat-form-field>
+          <input matInput type="text" name="title" ngModel #title="ngModel" required minlength="3" placeholder="Post title">
+          <mat-error *ngIf="title.invalid">Please enter the title more then 3 words </mat-error>
+        </mat-form-field>
+        <hr>
+         <mat-form-field>
+          <textarea matInput rows="6" name="body"  required ngModel #body="ngModel" placeholder="Post body"></textarea>
+          <mat-error *ngIf="body.invalid">Please enter the body </mat-error>
+        </mat-form-field>
+        <hr>
+        <button mat-raised-button color="primary" type="submit">Save</button>
+
+  </form>
+  </mat-card>
+
