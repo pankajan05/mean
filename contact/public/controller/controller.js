@@ -1,3 +1,7 @@
-function Appctrl() {
-    console.log("hello world from controller.")
+function Appctrl($scope, $http) {
+
+    $http.get('/contactlist').success(function(response) {
+        $scope.contactlist = response;
+    });
+
 }

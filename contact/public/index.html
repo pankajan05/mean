@@ -8,13 +8,24 @@
         <div class="container" ng-controller="Appctrl">
             <h1>Contact List App</h1>
             <table class="table">
-                <tr>
-                    <th>Full Name</th>
-                    <th>Student Id</th>
-                    <th>Phone Number</th>
-                    <th>Address</th>
-                    <th>Email Address</th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Student Id</th>
+                        <th>Phone Number</th>
+                        <th>Address</th>
+                        <th>Email Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="contact in contactlist">
+                        <td>{{ contact.fullname }}</td>
+                        <td>{{ contact.student_id }}</td>
+                        <td>{{ contact.phone_number }}</td>
+                        <td>{{ contact.address }}</td>
+                        <td>{{ contact.email_address }}</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
