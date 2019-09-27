@@ -34,4 +34,8 @@ function Appctrl($scope, $http) {
             refresh();
         });
     };
+
+    $scope.clear = function () {
+        $scope.contact= "";
+    }
 }
