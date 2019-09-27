@@ -1,9 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <head>
         <title>SE Contact App</title>
     </head>
     <body>
-        <h1>Contact list app</h1>
+        <div class="container" ng-controller="Appctrl">
+            <h1>Contact List App</h1>
+            <table class="table">
+                <tr>
+                    <th>Full Name</th>
+                    <th>Student Id</th>
+                    <th>Phone Number</th>
+                    <th>Address</th>
+                    <th>Email Address</th>
+                </tr>
+            </table>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
+        <script src="controller/controller.js"></script>
     </body>
 </html>
