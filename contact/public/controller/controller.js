@@ -14,4 +14,10 @@ function Appctrl($scope, $http) {
             refresh();
         });
     };
+
+    $scope.remove = function (id) {
+        $http.delete('/contactlist/'+ id).success(function (response) {
+            refresh();
+        });
+    };
 }
